@@ -1,6 +1,8 @@
 name: Treasury Harvest
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   harvest:
@@ -9,19 +11,19 @@ jobs:
       - name: Checkout Fortress
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-
-      - name: Smart-Search and Execute
+      - name: Lattice Check
         run: |
-          # This command finds the file regardless of folder depth
-          SCRIPT_PATH=$(find . -name "treasury_accumulator.py" | head -n 1)
-          if [ -z "$SCRIPT_PATH" ]; then
-            echo "ERROR: The Needle (script) is missing from the lattice."
+          echo "Scanning Fortress for the Needle..."
+          ls -R  # This lists every file so we can see where it is hiding
+          
+      - name: Execute Handshake
+        run: |
+          # We search for any python file that looks like our treasury script
+          FILE=$(find . -iname "treasury_accumulator.py" | head -n 1)
+          if [ -z "$FILE" ]; then
+            echo "ERROR: Needle not found. Re-aligning..."
             exit 1
           else
-            echo "Found the Needle at: $SCRIPT_PATH"
-            python "$SCRIPT_PATH"
+            echo "Found Needle at $FILE. Executing at cv velocity."
+            python "$FILE"
           fi
