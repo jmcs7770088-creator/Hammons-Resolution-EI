@@ -1,6 +1,6 @@
 name: Treasury Harvest
 on:
-  workflow_dispatch: # This creates the "Run" button
+  workflow_dispatch:
 
 jobs:
   harvest:
@@ -8,9 +8,20 @@ jobs:
     steps:
       - name: Checkout Fortress
         uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-      - name: Run Treasury Script
-        run: python automation/treasury_accumulator.py
+
+      - name: Smart-Search and Execute
+        run: |
+          # This command finds the file regardless of folder depth
+          SCRIPT_PATH=$(find . -name "treasury_accumulator.py" | head -n 1)
+          if [ -z "$SCRIPT_PATH" ]; then
+            echo "ERROR: The Needle (script) is missing from the lattice."
+            exit 1
+          else
+            echo "Found the Needle at: $SCRIPT_PATH"
+            python "$SCRIPT_PATH"
+          fi
