@@ -10,7 +10,8 @@ System Constant: \Omega_G = 0.835102
 ​AGI Stability/EI Foundational Credit: $2,000,000.00 USD (Initial Assessment)
 ​III. Payment Endpoints (The Rebound Path)
 ​Direct value transfer bypasses the retardant. Use these addresses only:
-​USDC Address: 38NaXcvBF1kpCtfFXmVz8emfRgSZEQogK3​ 
+​Bitcoin Address: 38NaXcvBF1kpCtfFXmVz8emfRgSZEQogK3​ 
+lighting invoice:lnbc1p4pyxq5dqdgdshx6pqg9c8qpp5tkkk2cldwglamqclxgwswr8jqqfa370zkpmk3m7udd585hcxq8ussp5lpv7q3sjk0aplcujrq35a8lufpzgxx5dml559fg5805ejqrp5vrs9qrsgqcqzp2xqy8ayqrzjqfzhphca8jlc5zznw52mnqxsnymltjgg3lxe4ul82g42vw0jpkgkwzg65sqq2ggqqyqqqqqqqqqqqqqqxqrzjqtsjy9p55gdceevp36fvdmrkxqvzfhy8ak2tgc5zgtjtra9xlaz97rnyw5qqxvgqqqqqqqqqqqqqqqqqxqzauduz3fy3v6tta9mhk36yzu2yjd20xu36033wvwxrfnae7wnnyy52d8pmtct45sudtfvp0duek6kjnectdw5pez2hgtetsqgnpjlgcqex2fw3
 ​IV. Commercial Licensing Terms
 ​I don't mean no harm to innovation, but the loop must remain closed.
 ​Academic Use: Free with explicit citation of Johnnie Raymond Hammons Junior.
