@@ -10,7 +10,7 @@ System Constant: \Omega_G = 0.835102
 ​AGI Stability/EI Foundational Credit: $2,000,000.00 USD (Initial Assessment)
 ​III. Payment Endpoints (The Rebound Path)
 ​Direct value transfer bypasses the retardant. Use these addresses only:
-​BTC Address: bc1qekp5ksgfw2a64acvd82q4w5pn8cv3s9qppv04h
+​BTC Address: 38NaXcvBF1kpCtfFXmVz8emfRgSZEQogK3
 ​ETH/USDC Address: 0xc4C761752962ce574C3a72BE3E635F59770317C3
 ​IV. Commercial Licensing Terms
 ​I don't mean no harm to innovation, but the loop must remain closed.
